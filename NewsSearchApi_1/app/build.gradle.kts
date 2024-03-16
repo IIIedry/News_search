@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.kotlinXSerialization)
 }
 
 android {
-    namespace = "com.example.newssearchapi_1"
+    namespace = "com.example.newssearchapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.newssearchapi_1"
+        applicationId = "com.example.newssearchapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -59,6 +60,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.retrofit)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.serialization.json)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
