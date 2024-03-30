@@ -1,19 +1,17 @@
 package com.example.newssearchapi_1.models
 
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import java.util.Date
 
-@Entity(
-    tableName = "articles"
-)
+@Serializable
 data class Article(
-    @PrimaryKey(autoGenerate = true)
-    var id: Int? =null,
-    val author: String?,
-    val content: String?,
-    val description: String?,
-    val publishedAt: String?,
-    val source: Source?,
-    val title: String?,
-    val url: String,
-    val urlToImage: String?
-) : Serializable
+    @SerialName("source") val source: Source,
+    @SerialName("author") val author: String,
+    @SerialName("title") val title: String,
+    @SerialName("description") val description: String,
+    @SerialName("url") val url: String,
+    @SerialName("urlToImage") val urlToImage: String,
+    @SerialName("publishedAt") val publishedAt: Date,
+    @SerialName("content") val content: String,
+)
