@@ -1,11 +1,12 @@
 package com.example.newssearchapi_1
 
 import android.content.Context
-import com.example.common.AndroidLogcatLogger
-import com.example.common.AppDispatchers
-import com.example.common.Logger
+import com.example.news.common.AndroidLogcatLogger
+import com.example.news.common.AppDispatchers
+import com.example.news.common.Logger
 import com.example.database.NewsDatabase
 import com.example.newsapi.NewsApi
+import com.example.newssearchapi_1.BuildConfig
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

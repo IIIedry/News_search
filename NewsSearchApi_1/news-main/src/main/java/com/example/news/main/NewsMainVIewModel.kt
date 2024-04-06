@@ -1,5 +1,4 @@
 package com.example.news.main
-
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.news.data.RequestResult
@@ -8,7 +7,6 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
-import java.security.Provider
 import javax.inject.Inject
 import javax.inject.Provider
 
@@ -38,10 +36,10 @@ internal class NewsMainVIewModel @Inject constructor(
 
 
 
-internal sealed class State(val articles: List<ArticleUI>?){
+internal sealed class State(val articles: List<ArticleUI>?) {
     data object None : State(articles = null)
-    class Loading( articles : List<ArticleUI>? = null) : State(articles)
-    class Error( articles : List<ArticleUI>? = null) : State(articles)
-    class Success( articles : List<ArticleUI>) : State(articles)
+    class Loading(articles: List<ArticleUI>? = null) : State(articles)
+    class Error(articles: List<ArticleUI>? = null) : State(articles)
+    class Success(articles: List<ArticleUI>) : State(articles)
 
 }

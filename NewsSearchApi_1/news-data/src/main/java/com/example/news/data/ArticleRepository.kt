@@ -1,7 +1,7 @@
 package com.example.news.data
 
 import android.annotation.SuppressLint
-import com.example.common.Logger
+import com.example.news.common.Logger
 import com.example.database.NewsDatabase
 import com.example.database.models.ArticleDBO
 import com.example.news.data.model.Article

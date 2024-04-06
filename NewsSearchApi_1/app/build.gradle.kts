@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.newssearchapphometask3"
+    namespace = "com.example.newssearchapi_1"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.newssearchapphometask3"
+        applicationId = "com.example.newssearchapi_1"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -21,8 +21,8 @@ android {
             useSupportLibrary = true
         }
 
-//        buildConfigField("String","NEWS_API_KEY","\"820e04c8035b4937a7281f69caac9e1e\"")
-//        buildConfigField("String","NEWS_API_BASE_URL","\"https://newsapi.org/v2/\"")
+        buildConfigField("String","NEWS_API_KEY","\"6a3f454ca118497faf0e2a42d951546d\"")
+        buildConfigField("String","NEWS_API_BASE_URL","\"https://newsapi.org/v2/\"")
 
 
     }
