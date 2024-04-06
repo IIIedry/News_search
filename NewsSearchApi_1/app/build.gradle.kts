@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.newssearchapp"
+    namespace = "com.example.newssearchapphometask3"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.newssearchapp"
+        applicationId = "com.example.newssearchapphometask3"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -20,6 +20,11 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+//        buildConfigField("String","NEWS_API_KEY","\"820e04c8035b4937a7281f69caac9e1e\"")
+//        buildConfigField("String","NEWS_API_BASE_URL","\"https://newsapi.org/v2/\"")
+
+
     }
 
     buildTypes {
@@ -39,10 +44,11 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.9"
     }
     packaging {
         resources {
