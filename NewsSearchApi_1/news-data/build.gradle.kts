@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.news_data"
+    namespace = "com.example.news.data"
     compileSdk = 34
 
     defaultConfig {
@@ -35,9 +35,12 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-}
+    implementation(libs.kotlinx.coroutines.android)
+
+
+    implementation(project(":database"))
+    implementation(project(":newsapi"))
+    implementation(project(":news-common"))
+
+    implementation(libs.jakarta.inject)
+

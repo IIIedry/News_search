@@ -1,4 +1,4 @@
-package com.example.news_data
+package com.example.news.data
 
 import org.junit.Test
 
