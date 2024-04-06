@@ -1,4 +1,4 @@
-package com.example.news_common
+package com.example.common
 
 import android.util.Log
 

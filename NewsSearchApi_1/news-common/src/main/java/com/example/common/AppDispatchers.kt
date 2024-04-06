@@ -1,4 +1,4 @@
-package com.example.news_common
+package com.example.common
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers

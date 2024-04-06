@@ -44,3 +44,4 @@ dependencies {
 
     implementation(libs.jakarta.inject)
 
+}
